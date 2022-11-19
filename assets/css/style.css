@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  }
+
+@font-face {
+    font-family: InterBold;
+    src: url(../fonts/static/Inter-Bold.ttf);
+  }
+
+@font-face {
+    font-family: InterExtraBold;
+    src: url(../fonts/static/Inter-ExtraBold.ttf);
+  }
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter;
+}
+
+body {
+    margin:5% 10%;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav {
+    width:40%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color:hsl(240,100%,5%);
+}
+
+section {
+    display:flex;
+    margin:5% 0 ;
+}
+
+.brightfuture {
+    width:65%;
+}
+
+.brightfuture img {
+    object-fit: cover;
+    width:100%;
+}
+
+.brightfuture > div {
+    display:flex;
+    justify-content: space-between;
+    margin-top:2%;
+    gap:5rem;
+}
+
+.brightfuture div div {
+    width:80%;
+}
+
+h2 {
+    font-family:InterExtraBold;
+    font-size: 3rem;
+    width:60%;
+}
+
+.brightfuture p {
+    color:hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+
+.brightfuture a {
+    color:hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding:2px;
+}
