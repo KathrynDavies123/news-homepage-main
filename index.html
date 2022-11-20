@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <div class="backgroundcolor"></div>
     <header>
       <img src="./assets/images/logo.svg" alt="w logo" />
-      <nav>
-        <ul>
+      <nav class="navigation">
+        <button class="togglemenu"><img src="./assets/images/icon-menu.svg" alt="burger menu"></button>
+        <ul class="navlist">
           <a href="#">Home</a>
           <a href="#">New</a>
           <a href="#">Popular</a>
@@ -40,11 +42,10 @@
     <main>
       <section>
         <article class="brightfuture">
-          <img
-            src="./assets/images/image-web-3-desktop.jpg"
-            alt="puzzle pieces"
-          />
-          <div>
+          <div class="imagecontainertitle">
+
+          </div>
+          <div class="textcontainer">
             <h2>The Bright Future of Web 3.0?</h2>
             <div>
               <p>
@@ -114,5 +115,6 @@
       >. Coded by
       <a href="https://github.com/KathrynDavies123">Kathryn Davies</a>.
     </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

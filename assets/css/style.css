@@ -36,6 +36,10 @@ body {
     margin:5% 10%;
 }
 
+.backgroundcolor {
+    display: none;
+}
+
 header {
     display:flex;
     justify-content: space-between;
@@ -43,6 +47,10 @@ header {
 
 nav {
     width:40%;
+}
+
+nav button {
+    display: none;
 }
 
 nav ul {
@@ -61,7 +69,7 @@ nav a:hover {
 
 section {
     display:flex;
-    margin:5% 0 6% 0;
+    margin-top:4%;
     gap:2rem;
 }
 
@@ -69,12 +77,13 @@ section {
     width:65%;
 }
 
-.brightfuture img {
-    object-fit: cover;
-    width:100%;
+.imagecontainertitle {
+    height:300px;
+    background-size: cover;
+    background-image:url("../images/image-web-3-desktop.jpg");
 }
 
-.brightfuture > div {
+.textcontainer {
     display:flex;
     justify-content: space-between;
     margin-top:2%;
@@ -88,7 +97,7 @@ h2 {
     line-height:3.5rem;
 }
 
-.brightfuture div div {
+.textcontainer div {
     width:70%;
     display:flex;
     flex-direction:column;
@@ -159,6 +168,7 @@ h3 {
 
 .footer {
     gap:1rem;
+    margin: 5% 0 5% 0;
 }
 
 .footer > div {
@@ -193,26 +203,137 @@ h5 {
 }
 
 @media (max-width:375px) {
+    * {
+        margin:0;
+        padding:0;
+    }
+    
+    body {
+        margin:7% 5%;
+        padding:0;
+    }
+
+    .backgroundcolor {
+        height:100vh;
+        width:100vw;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+
+    .on {
+        display: block;
+        background-color: hsl(236, 13%, 42%);
+        opacity: 0.5;
+    }
+
+    header > img {
+        height:30px;
+        width:50px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav button {
+        display: block;
+        background-color: white;
+        border:none;
+    }
+
+    nav ul {
+        display:none;
+    }
+
+    .open {
+        display:flex;
+        position:absolute;
+        height:100vh;
+        width:100%;
+        top:0;
+    }
+
+    .navlistopen {
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        right:0;
+        top:0;
+        background-color: white;
+        height:100%;
+        padding:35% 7% 50% 7%;
+        width:72%;
+    }
+
+    .buttonopen {
+        display:block;
+        position:absolute;
+        top:20px;
+        right:40px;
+        z-index:2;
+    }
+    
     section {
         flex-direction:column;
-        width:100vw;
+        width:100%;
         margin:0;
         padding:0;
     }
 
+    p {
+        width:100%;
+    }
+
     .brightfuture, .new {
-        width:100vw;
+        width:100%;
     }
 
     .brightfuture {
-        margin-top:10%;
+        margin:10% 0;
     }
 
-    .brightfuture > div {
+    .imagecontainertitle {
+        background-image: url("../images/image-web-3-mobile.jpg");
+    }
+
+    .textcontainer{
         flex-direction: column;
+        gap:0;
+        margin-top:8%;
+    }
+
+    .brightfuture a {
+        width:55%;
+    }
+
+    h2 {
+        width:100%;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .brightfuture div div {
+        width:100%;
+    }
+
+    .brightfuture p {
+        margin: 5% 0;
+        line-height:1.5rem;
+    }
+
+    .new {
+        margin-bottom:10%;
+    }
+
+    .new div div {
+        padding:10% 0;
     }
 
     .footer div {
-        width:100vw;
+        width:100%;
+        margin-bottom:4%;
     }
 }
