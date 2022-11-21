@@ -219,10 +219,11 @@ h5 {
         position:fixed;
         top:0;
         left:0;
+        transition: all 1s;
+        display: block;
     }
 
     .on {
-        display: block;
         background-color: hsl(236, 13%, 42%);
         opacity: 0.5;
     }
@@ -233,47 +234,52 @@ h5 {
     }
 
     nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        top:20px;
+        right:0;
+        position:absolute;
     }
 
     nav button {
         display: block;
         background-color: white;
         border:none;
+        position: absolute;
+        top:20px;
+        right:20px;
+        z-index:2;
     }
 
     nav ul {
-        display:none;
+        display:flex;
+        flex-direction:column;
+        position:fixed;
+        right:-250px;
+        top:0;
+        background-color: white;
+        height:100%;
+        width:72%;
+        padding: 35% 7%;
+        z-index: 1;
+        transition: all 1s;
     }
 
     .open {
         display:flex;
-        position:absolute;
+        position:fixed;
         height:100vh;
         width:100%;
         top:0;
     }
 
     .navlistopen {
-        display:flex;
-        flex-direction:column;
-        position:absolute;
         right:0;
-        top:0;
-        background-color: white;
-        height:100%;
-        padding:35% 7% 50% 7%;
-        width:72%;
     }
 
     .buttonopen {
         display:block;
-        position:absolute;
-        top:20px;
-        right:40px;
+        position:fixed;
         z-index:2;
+        top:30px;
     }
     
     section {
