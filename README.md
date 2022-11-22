@@ -1,5 +1,9 @@
 # Frontend Mentor - News homepage
 
+This is my solution to the below front-end challenge. 
+
+I used flex for the overall layout, media queries to make this as responsive as possible and some transitions in order to have the menu open smoothly on mobile displays. 
+
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
